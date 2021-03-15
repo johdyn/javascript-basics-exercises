@@ -1,10 +1,12 @@
 alert("Welcome to this website");
 let userName = prompt("What is your name?");
 
-let yearOfBirth = prompt("What is your year of birth?", 2021);
+let yearOfBirth = Number(prompt("What is your year of birth?", 2021));
 let age = 0;
 
+// Trying to solve it where a number is demanded
 if (!Number(yearOfBirth)) {
+  prompt("please enter a number!");
   yearOfBirth = 2021;
 }
 age = 2021 - yearOfBirth;
